@@ -16,8 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view .
+    
+    [self setUI];
+    
+    
+    
+    
+    
 }
 
+- (void)setUI {
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+}
 
 @end
