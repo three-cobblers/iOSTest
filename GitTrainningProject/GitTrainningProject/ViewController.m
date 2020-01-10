@@ -14,7 +14,7 @@
 
 @property (nonatomic, copy) void(^libingsBlock)(NSString *name);
 @property (nonatomic, copy) void(^myBlock)(int a);
-
+@property (nonatomic, copy) NSString*(^stringBlock)(NSString *name);
 @end
 
 @implementation ViewController
@@ -35,6 +35,18 @@
         return 1;
     };
     NSLog(@"%i",testBlock());
+    
+    
+    //block
+    int (^calSum)(int, int) = ^(int a, int b){
+        return a + b;
+    };
+    NSLog(@"%d",calSum(2,3));
+    
+    
+    
+    
+    
 }
 
 @end
