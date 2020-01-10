@@ -45,6 +45,10 @@
     
     
     
+    UIView *testView = [[UIView alloc] init];
+    testView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:testView];
+    
     
     
     
